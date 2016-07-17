@@ -1,0 +1,547 @@
+/*基本默认值*/
+html {
+    font-size: 62.5%;
+    color: #222;
+}
+
+::selection {
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+img{border: none;vertical-align: top;}
+/*工具样式*/
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.cen-w90{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.fr {
+    float: right !important;
+}
+
+.fl {
+    float: left !important;
+}
+
+.tar {
+    text-align: right !important;
+}
+
+.ral {
+    text-align: left !important;
+}
+
+.tac {
+    text-align: center !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+/*浏览器更新样式*/
+.browserupgrade {
+    margin: 0;
+    padding: 1rem;
+    background: #ccc;
+}
+/*自定义页面样式*/
+body {
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-family: "Microsoft YaHei","微软雅黑" ;
+    background-color: #f7f7f7;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #0ae;
+    text-decoration: underline;
+}
+/*网站头部*/
+header{
+    width: 100%;
+}
+header .top {
+    line-height: 3rem;
+    padding: 0 1.5rem;
+    color: #fff;
+    background: #555;
+    border-bottom: 1px #ecc000 solid;
+}
+@media only screen and (max-width:50em){
+    /*网站头部*/
+     header .top{
+        background: #1ed696;
+    }
+}
+header .top .tel {
+    float: left;
+}
+header .top ul {
+    text-align: right;
+}
+header .top ul li {
+    display: inline-block;
+}
+header ul li + li{
+    margin-left: -3px;
+    border-left: 1px solid  #999;
+}
+header ul li a{
+    display: inline-block;
+    color: #fff;
+    padding: 0 1.5rem;
+}
+.main .brand {
+    float: left;
+    padding: 1rem 1.5rem 0;
+}
+header .main {
+    padding: 0;
+}
+
+
+
+header .main ul {
+    text-align: right;
+}
+
+header .main ul li {
+    display: inline-block;
+    border-left: 1px solid #f0ede9;
+}
+.main ul li a{
+    display: inline-block;
+    color: #7C7A64;
+    line-height: 5.5rem;
+    padding: 0 2.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+header .main ul li a:hover,
+header .main ul li a:active,
+header .main ul li a.active {
+    color: #ffb300;
+    background-color: #f8f6f1;
+}
+.main ul li a:hover,.main ul li a:active,.main ul .active a{
+    color: #ffb300;
+    background-color: #f8f6f1;
+    
+}
+/*网站主要内容*/
+.container {
+	width: 100%;
+}
+
+/*交易信息*/
+.transtction{
+    width: 100%;
+    background-color: #7C7364;
+}
+.trans-conta{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+.trans-date{
+    float: left;
+    padding: 1rem;
+    text-align: left;
+}
+.trans-date span{
+    display: inline-block;
+    line-height: 3rem;
+    color: #fff;
+}
+.trans-date span.tra-money {
+    font-size: 2.2rem;
+    color: #ff9900;
+    padding: 0 1rem;
+    margin: 0 1rem;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 1px 2px 1px #333 inset;
+    letter-spacing: 3px;
+}
+.trans-pro{
+    text-align: right;
+}
+.trans-pro a{
+    display: inline-block;
+    line-height: 3rem;
+    padding: 1rem;
+    color: #fff;
+}
+
+/*滚动广告*/
+.ad{
+    display: none;
+}
+
+
+
+/*平台特点*/
+.feature{
+    margin: 2rem auto;
+    font-size: 0;
+}
+.item{
+    display: inline-block;
+    width: calc(33.33333% - 3rem);
+    padding: .1rem;
+    background-color: #fff;
+    font-size: 1.4rem;
+    box-shadow: 0 0 4px #ccc;
+}
+.feature .item + .item{
+    margin-left: 1.5rem;
+}
+
+.feature .item h3{
+    display: inline-block;
+    color: #FF9A00;
+    font-size: 3rem;
+    font-family: "Microsoft YaHei","微软雅黑";
+    font-weight: bold;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    text-align: center;
+}
+.feature .item p{
+    display: inline-block;
+    color: #9A9A9A;
+    width: 55%;
+    margin: 0;padding: 0;
+}
+
+/*最新公告*/
+.notice{
+    margin: 2rem auto;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    background-color: #fff;
+    box-shadow: 0 0 4px #ccc;
+}
+.notice a{
+    float: left;
+    display: inline-block;
+    width: 70%;
+    margin-left: 2rem;
+    text-decoration: none;
+}
+.notice a span {
+    color: #999;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+
+.notice a:first-child{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.notice .more {
+	float: right;
+    width: auto;
+    margin-right: 3rem;
+    color: #ffb300;
+}
+
+/* 产品列表 */
+.product{
+    margin: .2rem auto;
+    font-size: 1.4rem;
+    background-color: #F5F9FA;
+    border-top: 2px #FF9B01 solid;
+    box-shadow: 0 0 4px #ccc;
+    font-family: "Microsoft YaHei","微软雅黑";
+}
+.product h2{
+    float: left;
+    width: 20%;
+    font-size: 2.4rem;
+    margin-top: 3rem;
+    text-align: center;
+    font-weight: normal;
+}
+.product h2 em{
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
+.product h2 em:first-child {
+    margin-top: 4rem;
+}
+
+.product-content{
+    float: right;
+    width: 79.5%;
+    margin-left: 1px #F2F2F2 solid;
+    background-color: #fff;
+}
+.pro-item{
+    width: 100%;
+    
+}
+.pro-item:before,
+.pro-item:after {
+    content: " ";
+    display: table;
+}
+
+.pro-item:after {
+    clear: both;
+}
+.pro-item h3{
+    float: left;
+    width: 30%;
+    font-size: 1.4rem;
+    font-weight: normal;
+    text-align: center;
+}
+.pro-item h3 em{
+    
+    margin-right: .5rem;
+    font-size: 3.6rem;
+    font-style: normal;
+    color: #8b999d;
+}
+.pro-item .info {
+    float: left;
+    width: 48%;
+    padding: 1rem;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    font-size: 1.4rem;
+}
+.pro-item .info p{
+    width: 56%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+ .pro-item .info p:last-child {
+    width: 40%;
+}
+
+.pro-item .info p span{
+
+    display: block;
+    font-size: 2.4rem;
+    color: #ff9900;
+}
+
+
+
+.pro-item .info p span i{
+    font-size: 1.2rem;
+    font-style: normal;
+    color: #999;
+}
+
+
+.buy{
+    float: left;
+    width: calc(22% - 4.4rem);
+    padding: 1.rem;
+}
+.pro-item .buy a{
+    display: block;
+    width: 90%;
+    line-height: 4rem;
+    text-align: center;
+    background-color: #ffb300;
+    border-radius: 5px;
+    color: #fff;
+    margin: 1.5rem auto;
+}
+.product-content .pro-item + .pro-item {
+	border-top: 1px solid  #eee;
+}
+.pro-item .buy a.disabled{
+    background-color: #ccc !important;
+    cursor: not-allowed;
+}
+
+/*分类导航*/
+.footer{
+    padding: 3rem 0;
+    background-color: #fff;
+    border-top: 2px solid #eee;
+}
+.footer-content{
+    margin: 2rem auto;
+}
+.footer-content .brand {
+	float: left;
+    width: 20%;
+    background: url(../img/logo@1x.png) no-repeat left;
+    height: 35px;
+    filter: grayscale(100%);
+    -webkit-filter:grayscale(100%);
+}
+.footer-content ul{
+    width: 15%;
+    float: left;
+}
+.footer-content ul li{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+.footer-content ul .title {
+	font-size: 2rem;
+    line-height: 3rem;
+}
+
+
+
+
+
+/* 底部 */
+footer{
+    width: 100%;
+    padding: 3rem 0 5rem;
+    background-color: #ededed;
+}
+footer ul {
+    text-align: center;
+}
+footer ul li{
+    display: inline-block;
+}
+footer ul li .icon {
+    display: inline-block;
+    text-indent: -999rem;
+    margin-right: 1.5rem;
+    background: url(https://i.alipayobjects.com/e/201307/jebmKcbrh.png) no-repeat;
+    background-size: 466px 447px;
+    overflow: hidden;
+}
+footer ul li .icon-zfywxk {
+    width: 38px;
+    height: 27px;
+    background-position: -369px -45px;
+}
+
+footer ul li .icon-pcirk {
+    width: 78px;
+    height: 27px;
+    background-position: -110px -96px;
+}
+
+footer ul li .icon-visayz {
+    width: 36px;
+    height: 27px;
+    background-position: -426px -90px;
+}
+
+footer ul li .icon-vsjmfw {
+    width: 63px;
+    height: 27px;
+    margin-right: 13px;
+    background-position: -401px -186px;
+}
+
+footer ul li .icon-wlgs {
+    width: 22px;
+    height: 27px;
+    background-position: -48px -48px;
+}
+
+footer ul li .icon-rzcx {
+    width: 75px;
+    height: 27px;
+    background-position: 0 -320px;
+}
+footer ul li .icon-gs {
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+    background: url(https://os.alipayobjects.com/rmsportal/lybcjqloSPjMAFg.png) no-repeat;
+    background-size: 30px;
+}
+footer p{
+    text-align: center;
+    color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
